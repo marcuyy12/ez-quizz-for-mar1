@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Tersulit - 20 Soal</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: rgba(0,0,0,0.7);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            padding: 32px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        .question {
+            margin-bottom: 28px;
+            padding: 18px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .question p {
+            font-size: 1.15em;
+            margin-bottom: 12px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+            padding: 6px 12px;
+            border-radius: 6px;
+        }
+        .options input[type="radio"] {
+            margin-right: 8px;
+        }
+        .options label:hover {
+            background: rgba(255,255,255,0.15);
+        }
+        button {
+            display: block;
+            margin: 32px auto 0 auto;
+            padding: 12px 32px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            background: #ff9800;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #e65100;
+        }
+        #result {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Tersulit: 20 Soal</h1>
+        <form id="quizForm">
+            <!-- Soal 1 -->
+            <div class="question">
+                <p>1. Jika f(x) = x² + 2x + 1, berapakah nilai minimum dari f(x)?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> 0</label>
+                    <label><input type="radio" name="q1" value="b"> 1</label>
+                    <label><input type="radio" name="q1" value="c"> -1</label>
+                    <label><input type="radio" name="q1" value="d"> Tidak ada minimum</label>
+                </div>
+            </div>
+            <!-- Soal 2 -->
+            <div class="question">
+                <p>2. Berapa banyak cara menyusun kata "MATEMATIKA"?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> 3628800</label>
+                    <label><input type="radio" name="q2" value="b"> 453600</label>
+                    <label><input type="radio" name="q2" value="c"> 907200</label>
+                    <label><input type="radio" name="q2" value="d"> 1814400</label>
+                </div>
+            </div>
+            <!-- Soal 3 -->
+            <div class="question">
+                <p>3. Jika lim(x→0) (sinx)/x = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> 0</label>
+                    <label><input type="radio" name="q3" value="b"> 1</label>
+                    <label><input type="radio" name="q3" value="c"> Tidak terdefinisi</label>
+                    <label><input type="radio" name="q3" value="d"> ∞</label>
+                </div>
+            </div>
+            <!-- Soal 4 -->
+            <div class="question">
+                <p>4. Berapa hasil dari 2^10?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> 512</label>
+                    <label><input type="radio" name="q4" value="b"> 1024</label>
+                    <label><input type="radio" name="q4" value="c"> 2048</label>
+                    <label><input type="radio" name="q4" value="d"> 4096</label>
+                </div>
+            </div>
+            <!-- Soal 5 -->
+            <div class="question">
+                <p>5. Jika A dan B independen, maka P(A ∩ B) = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="a"> P(A) + P(B)</label>
+                    <label><input type="radio" name="q5" value="b"> P(A) × P(B)</label>
+                    <label><input type="radio" name="q5" value="c"> P(A) - P(B)</label>
+                    <label><input type="radio" name="q5" value="d"> P(A) / P(B)</label>
+                </div>
+            </div>
+            <!-- Soal 6 -->
+            <div class="question">
+                <p>6. Integral dari e^x dx adalah?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> e^x + C</label>
+                    <label><input type="radio" name="q6" value="b"> x·e^x + C</label>
+                    <label><input type="radio" name="q6" value="c"> ln(x) + C</label>
+                    <label><input type="radio" name="q6" value="d"> 1/(e^x) + C</label>
+                </div>
+            </div>
+            <!-- Soal 7 -->
+            <div class="question">
+                <p>7. Jika x + y = 10 dan x - y = 2, maka x = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="a"> 6</label>
+                    <label><input type="radio" name="q7" value="b"> 8</label>
+                    <label><input type="radio" name="q7" value="c"> 12</label>
+                    <label><input type="radio" name="q7" value="d"> 5</label>
+                </div>
+            </div>
+            <!-- Soal 8 -->
+            <div class="question">
+                <p>8. Berapa jumlah sudut dalam segi enam?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> 540°</label>
+                    <label><input type="radio" name="q8" value="b"> 720°</label>
+                    <label><input type="radio" name="q8" value="c"> 360°</label>
+                    <label><input type="radio" name="q8" value="d"> 900°</label>
+                </div>
+            </div>
+            <!-- Soal 9 -->
+            <div class="question">
+                <p>9. Jika 3x + 2 = 11, maka x = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="a"> 3</label>
+                    <label><input type="radio" name="q9" value="b"> 2</label>
+                    <label><input type="radio" name="q9" value="c"> 4</label>
+                    <label><input type="radio" name="q9" value="d"> 5</label>
+                </div>
+            </div>
+            <!-- Soal 10 -->
+            <div class="question">
+                <p>10. Jika log₁₀x = 2, maka x = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="a"> 100</label>
+                    <label><input type="radio" name="q10" value="b"> 10</label>
+                    <label><input type="radio" name="q10" value="c"> 20</label>
+                    <label><input type="radio" name="q10" value="d"> 2</label>
+                </div>
+            </div>
+            <!-- Soal 11 -->
+            <div class="question">
+                <p>11. Berapa akar dari 144?</p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="a"> 10</label>
+                    <label><input type="radio" name="q11" value="b"> 12</label>
+                    <label><input type="radio" name="q11" value="c"> 14</label>
+                    <label><input type="radio" name="q11" value="d"> 16</label>
+                </div>
+            </div>
+            <!-- Soal 12 -->
+            <div class="question">
+                <p>12. Jika 5! = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="a"> 120</label>
+                    <label><input type="radio" name="q12" value="b"> 60</label>
+                    <label><input type="radio" name="q12" value="c"> 24</label>
+                    <label><input type="radio" name="q12" value="d"> 720</label>
+                </div>
+            </div>
+            <!-- Soal 13 -->
+            <div class="question">
+                <p>13. Jika x² - 4x + 4 = 0, maka x = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="a"> 2</label>
+                    <label><input type="radio" name="q13" value="b"> 4</label>
+                    <label><input type="radio" name="q13" value="c"> -2</label>
+                    <label><input type="radio" name="q13" value="d"> 0</label>
+                </div>
+            </div>
+            <!-- Soal 14 -->
+            <div class="question">
+                <p>14. Jika 2x = 32, maka x = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="a"> 4</label>
+                    <label><input type="radio" name="q14" value="b"> 5</label>
+                    <label><input type="radio" name="q14" value="c"> 6</label>
+                    <label><input type="radio" name="q14" value="d"> 8</label>
+                </div>
+            </div>
+            <!-- Soal 15 -->
+            <div class="question">
+                <p>15. Jika a = 3 dan b = 4, berapa panjang sisi miring segitiga siku-siku?</p>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="a"> 5</label>
+                    <label><input type="radio" name="q15" value="b"> 6</label>
+                    <label><input type="radio" name="q15" value="c"> 7</label>
+                    <label><input type="radio" name="q15" value="d"> 12</label>
+                </div>
+            </div>
+            <!-- Soal 16 -->
+            <div class="question">
+                <p>16. Berapa hasil dari 7 × 8?</p>
+                <div class="options">
+                    <label><input type="radio" name="q16" value="a"> 54</label>
+                    <label><input type="radio" name="q16" value="b"> 56</label>
+                    <label><input type="radio" name="q16" value="c"> 64</label>
+                    <label><input type="radio" name="q16" value="d"> 58</label>
+                </div>
+            </div>
+            <!-- Soal 17 -->
+            <div class="question">
+                <p>17. Jika x = 2 dan y = 3, berapa nilai x^y?</p>
+                <div class="options">
+                    <label><input type="radio" name="q17" value="a"> 6</label>
+                    <label><input type="radio" name="q17" value="b"> 8</label>
+                    <label><input type="radio" name="q17" value="c"> 9</label>
+                    <label><input type="radio" name="q17" value="d"> 12</label>
+                </div>
+            </div>
+            <!-- Soal 18 -->
+            <div class="question">
+                <p>18. Jika 2x + 3y = 12 dan y = 2, maka x = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q18" value="a"> 3</label>
+                    <label><input type="radio" name="q18" value="b"> 2</label>
+                    <label><input type="radio" name="q18" value="c"> 4</label>
+                    <label><input type="radio" name="q18" value="d"> 6</label>
+                </div>
+            </div>
+            <!-- Soal 19 -->
+            <div class="question">
+                <p>19. Jika luas lingkaran adalah πr², berapa luas lingkaran dengan r = 7?</p>
+                <div class="options">
+                    <label><input type="radio" name="q19" value="a"> 49π</label>
+                    <label><input type="radio" name="q19" value="b"> 14π</label>
+                    <label><input type="radio" name="q19" value="c"> 21π</label>
+                    <label><input type="radio" name="q19" value="d"> 28π</label>
+                </div>
+            </div>
+            <!-- Soal 20 -->
+            <div class="question">
+                <p>20. Jika 2x + 5 = 17, maka x = ?</p>
+                <div class="options">
+                    <label><input type="radio" name="q20" value="a"> 6</label>
+                    <label><input type="radio" name="q20" value="b"> 5</label>
+                    <label><input type="radio" name="q20" value="c"> 7</label>
+                    <label><input type="radio" name="q20" value="d"> 8</label>
+                </div>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script>
+        // Jawaban benar
+        const answers = {
+            q1: 'a',
+            q2: 'b',
+            q3: 'b',
+            q4: 'b',
+            q5: 'b',
+            q6: 'a',
+            q7: 'b',
+            q8: 'b',
+            q9: 'a',
+            q10: 'a',
+            q11: 'b',
+            q12: 'a',
+            q13: 'a',
+            q14: 'b',
+            q15: 'a',
+            q16: 'b',
+            q17: 'b',
+            q18: 'a',
+            q19: 'a',
+            q20: 'a'
+        };
+
+        function submitQuiz() {
+            let score = 0;
+            for (let i = 1; i <= 20; i++) {
+                const q = document.querySelector('input[name="q'+i+'"]:checked');
+                if (q && q.value === answers['q'+i]) score++;
+            }
+            document.getElementById('result').innerText = `Skor Anda: ${score} / 20`;
+        }
+    </script>
+</body>
+</html>
